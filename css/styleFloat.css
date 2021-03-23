@@ -7,7 +7,7 @@ body {
   margin: 0 auto;
   background-color: rgb(62, 60, 66);
   box-sizing: border-box;
-  max-width: 800px;
+  max-width: 1024px;
   text-align: center;
 
   background: url('../image/bg.webp') no-repeat center center fixed; 
@@ -31,12 +31,12 @@ header, nav, footer {
 
 section, article {
   height: 50em;
-  width: 50%;
+  width: 75%;
 }
 
 aside {
   height: 100em;
-  width: 50%;
+  width: 25%;
   float: right;
 }
 
@@ -54,8 +54,7 @@ a {
 a:hover {
   /* transform:scale(1.1); */
   animation: tada;
-  animation-duration: 700ms;
-  background-color:rgba(62, 60, 66, .25);
+  animation-duration: 500ms;
 }
 
 a:visited {
@@ -70,7 +69,6 @@ nav {
 }
 
 header {
-  /* box-shadow: 0px 0px 3px 2px rgb(255, 255, 255); */
   position: relative;
   z-index: 1;
   animation-name: fadeinout;
