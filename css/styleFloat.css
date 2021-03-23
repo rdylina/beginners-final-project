@@ -40,6 +40,15 @@ aside {
   float: right;
 }
 
+footer {
+  display: flex;
+}
+
+footer i {
+  font-size: 3em;
+}
+
+
 a {
   text-shadow: 1px 1px 4px black;
   font-size: 24px;
