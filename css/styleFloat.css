@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
+}
 
+:root {
+  --social-icon-color: rgb(117, 117, 117);
 }
 
 body {
@@ -8,6 +11,7 @@ body {
   background-color: rgb(62, 60, 66);
   box-sizing: border-box;
   max-width: 900px;
+  min-width: 550px;
   text-align: center;
 
   background: url('../image/bg.webp') no-repeat center center fixed; 
@@ -94,6 +98,7 @@ header {
 footer {
   display: flex;
   justify-content: space-around;
+  background-color: rgba(58, 58, 58,.75);
 }
 
 footer i {
@@ -101,7 +106,8 @@ footer i {
 }
 
 #fb-social, #yt-social {
-  transition: ease-out 1s;
+  transition: ease-out 700ms;
+  color:var(--social-icon-color);
 
 }
 #fb-social:hover {
@@ -115,9 +121,9 @@ footer i {
 }
 
 #ig-social {
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: igmouseout; 
+  animation-duration: 1.2s;
+  animation-name: igmouseout;
+  color: var(--social-icon-color);
   
 }
 
@@ -130,7 +136,7 @@ footer i {
 
 @keyframes ighover {
   0% {
-    color: black;
+    color: var(--social-icon-color);
     background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -161,21 +167,20 @@ footer i {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background-clip: text;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
   }
   
-  99% {
-    color: black;
-  }
+  50% {
+    color: var(--social-icon-color);
+  }  
+
   100% {
-    color: black;
-    background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: var(--social-icon-color);
+    background: transparent;
+    background-clip: unset;
+    -webkit-background-clip: unset; 
   }
+
 }
   
 
