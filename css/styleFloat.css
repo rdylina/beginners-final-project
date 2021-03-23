@@ -7,7 +7,7 @@ body {
   margin: 0 auto;
   background-color: rgb(62, 60, 66);
   box-sizing: border-box;
-  max-width: 1024px;
+  max-width: 900px;
   text-align: center;
 
   background: url('../image/bg.webp') no-repeat center center fixed; 
@@ -39,15 +39,6 @@ aside {
   width: 25%;
   float: right;
 }
-
-footer {
-  display: flex;
-}
-
-footer i {
-  font-size: 3em;
-}
-
 
 a {
   text-shadow: 1px 1px 4px black;
@@ -99,5 +90,93 @@ header {
   0% {box-shadow: 0px 0px 3px 3px rgba(100, 149, 237, 0);}
   100% {box-shadow: 0px 0px 3px 3px rgba(100, 149, 237, 1);}
 }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer i {
+  font-size: 3em;
+}
+
+#fb-social, #yt-social {
+  transition: ease-out 1s;
+
+}
+#fb-social:hover {
+  transition: color 500ms;
+  color: rgba(45, 136, 255, .9);
+}
+
+#yt-social:hover {
+  transition: color 500ms;
+  color: rgba(255, 45, 45, 0.9);
+}
+
+#ig-social {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: igmouseout; 
+  
+}
+
+#ig-social:hover {
+  animation-name: ighover;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes ighover {
+  0% {
+    color: black;
+    background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: transparent;
+    background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+@keyframes igmouseout {
+  0% {
+    color: transparent;
+    background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  99% {
+    color: black;
+  }
+  100% {
+    color: black;
+    background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+  
 
 
