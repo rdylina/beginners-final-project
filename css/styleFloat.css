@@ -40,6 +40,7 @@ header, nav, footer {
 section, article {
   height: 50em;
   width: 75%;
+  flex-direction:column;
 }
 
 aside {
@@ -48,7 +49,7 @@ aside {
   float: right;
 }
 
-a {
+nav a {
   text-shadow: 1px 1px 4px black;
   font-size: 24px;
   font-weight: 900;
@@ -59,13 +60,13 @@ a {
   transition-duration: 500ms;
 }
 
-a:hover {
+nav a:hover {
   /* transform:scale(1.1); */
   animation: tada;
   animation-duration: 500ms;
 }
 
-a:visited {
+nav a:visited {
   color:salmon;
 }
 
