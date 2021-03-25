@@ -38,7 +38,7 @@ header, nav, footer {
 }
 
 section, article {
-  height: 50em;
+  height: 40em;
   width: 75%;
   flex-direction:column;
   justify-content: start;
@@ -47,7 +47,7 @@ section, article {
 }
 
 aside {
-  height: 100em;
+  height: 80em;
   width: 25%;
   float: right;
 }
@@ -110,6 +110,10 @@ header {
 
 
 section h1 {
+  font-family:'Chango', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article h1 {
   font-family:'Chango', Tahoma, Geneva, Verdana, sans-serif;
 }
 
