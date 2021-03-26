@@ -1,5 +1,5 @@
 /* Import our external fonts */
-@import url('https://fonts.googleapis.com/css2?family=Chango&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Lato:wght@400;700;900&family=Dela+Gothic+One&display=swap');
 
 /* Basic setup parameter to ensure consistent styling across browsers with different defaults */
 * {
@@ -11,6 +11,8 @@
 /* Little bit of CSS native variable functions for fun */
 :root {
   --social-icon-color: rgb(117, 117, 117);
+  --primary-color: rgb(226, 130, 130);
+  --background-dark: rgba(58, 58, 58,.75);
 }
 
 /* Setup the styling for the entire body */
@@ -51,11 +53,16 @@ section, article {
   padding: 2em;
 }
 
+section img, article img {
+  max-width: 100%;
+}
+
 aside {
   height: 80em;
   width: 25%;
   float: right;
   flex-direction: column;
+  justify-content: start;
 }
 
 nav a {
@@ -96,18 +103,18 @@ header {
   animation-direction: alternate;
 
   text-shadow: 1px 1px 4px black;
-  font-size: 3em;
+  font-size: clamp(30px,1em + 3vw, 4em);
   font-weight: 900;
   color: white;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: .75em;
   justify-content: space-between;
 
+
 }
 
 #header-heart {
   color:rgb(226, 130, 130);
-  margin: 0 1em 0 1em;
 }
 
 @keyframes fadeinout {
@@ -224,7 +231,7 @@ footer i {
 }
 
 .card-header {
-  background-color: tomato;
+  background-color: var(--primary-color);
   padding: 5px;
   font-family:'Chango', Tahoma, Geneva, Verdana, sans-serif;
   font-size: .75em;
@@ -241,15 +248,23 @@ footer i {
   color:whitesmoke;
   background-color: var(--social-icon-color);
   border-radius: 5px;
-  border: 1px solid black;
-  font-weight: bold;
+  border: none;
+
   transition-duration: 500ms;
+  font-family:'Delta Gothic One', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .card-button:hover {
   transform: scale(1.1);
-  background-color: tomato;
+  background-color: var(--primary-color);
   color:black;
   transition-duration: 500ms;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: black;
 }
 
