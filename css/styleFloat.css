@@ -33,7 +33,7 @@ body {
   background-size: cover;
 }
 
-header, nav, footer, section, article, aside {
+header, nav, footer, section, article, aside, .section-about {
   background-color: rgba(245, 245, 245,.75);
   display: flex;
   justify-content: center;
@@ -110,6 +110,20 @@ aside {
   width: 25%;
   float: right;
   flex-direction: column;
+  justify-content: start;
+}
+
+.section-about{
+  height:100vh;
+  width:100%;
+  align-items: center;
+  justify-content: start;
+}
+
+.section-contact {
+  height:100vh;
+  width:100%;
+  align-items: center;
   justify-content: start;
 }
 
