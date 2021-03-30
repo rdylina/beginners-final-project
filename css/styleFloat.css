@@ -139,13 +139,13 @@ nav {
   top: 0;
   display: flex;
   justify-content:space-around;
-  z-index: 999;
+  z-index: 9000;
 }
 
 header {
 
   position: relative;
-  z-index: 1;
+  z-index: 9900;
   animation-name: fadeinout;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -183,6 +183,12 @@ section h1 {
 
 article h1 {
   font-family:'Chango', Tahoma, Geneva, Verdana, sans-serif;
+  align-self:center;
+}
+
+.video {
+  margin-top: 75px;
+  align-self: center;
 }
 
 footer {
